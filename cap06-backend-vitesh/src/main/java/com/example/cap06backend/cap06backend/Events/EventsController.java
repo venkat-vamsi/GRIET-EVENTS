@@ -102,7 +102,7 @@ public class EventsController {
         this.eventsService = eventsService;
     }
 
-    @GetMapping
+    @GetMapping("/")
     public ResponseEntity<List<Events>> getAllEvents() {
         List<Events> events = eventsService.getAllEvents();
         return ResponseEntity.ok(events);
